@@ -7,6 +7,8 @@ using Microsoft.Extensions.Logging;
 
 namespace SimpleAPI.Controllers
 {
+    // test git
+    
     [ApiController]
     [Route("[controller]")]
     public class ValuesController : ControllerBase
@@ -16,7 +18,6 @@ namespace SimpleAPI.Controllers
         {
             return new string[] {"value1","value2"};
         }
-
 
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
